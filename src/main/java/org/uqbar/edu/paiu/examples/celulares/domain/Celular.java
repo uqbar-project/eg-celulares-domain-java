@@ -1,10 +1,12 @@
 package org.uqbar.edu.paiu.examples.celulares.domain;
 
 import org.uqbar.commons.model.Entity;
+import org.uqbar.commons.model.ObservableUtils;
 import org.uqbar.commons.model.UserException;
 import org.uqbar.commons.utils.Observable;
 import org.uqbar.commons.utils.Transactional;
 
+@SuppressWarnings("serial")
 @Transactional
 @Observable
 public class Celular extends Entity {
@@ -89,6 +91,8 @@ public class Celular extends Entity {
 
 	public void setModeloCelular(ModeloCelular modeloCelular) {
 		this.modeloCelular = modeloCelular;
+		this.setRecibeResumenCuenta(modeloCelular.getRequiereResumenCuenta());
+		ObservableUtils.firePropertyChanged(this, "habilitaResumenCuenta", this.getHabilitaResumenCuenta());
 	}
 
 	public void setRecibeResumenCuenta(Boolean recibeResumenCuenta) {
@@ -99,6 +103,10 @@ public class Celular extends Entity {
 		return this.recibeResumenCuenta;
 	}
 
+	public Boolean getHabilitaResumenCuenta() {
+		return !this.modeloCelular.getRequiereResumenCuenta();
+	}
+	
 	// ********************************************************
 	// ** Misceláneos
 	// ********************************************************

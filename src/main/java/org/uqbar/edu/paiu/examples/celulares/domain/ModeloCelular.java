@@ -12,12 +12,22 @@ public class ModeloCelular extends Entity {
 	
 	private String descripcion;
 	private BigDecimal costo;
+	private Boolean requiereResumenCuenta;  // FED: boolean tiene problemas
 	
-	public ModeloCelular(String descripcion, double costo) {
-		this.descripcion = descripcion;
-		this.costo = new BigDecimal(costo);
+	public ModeloCelular(){
+		super();
 	}
 	
+	public ModeloCelular(String descripcion, BigDecimal costo) {
+		this(descripcion, costo, false);
+	}
+
+	public ModeloCelular(String descripcion, BigDecimal costo, boolean requiereResumenCuenta) {
+		this.descripcion = descripcion;
+		this.costo = costo;
+		this.requiereResumenCuenta = requiereResumenCuenta;
+	}
+
 	public String getDescripcion() {
 		return this.descripcion;
 	}
@@ -38,6 +48,14 @@ public class ModeloCelular extends Entity {
 		this.costo = costo;
 	}
 	
+	public Boolean getRequiereResumenCuenta() {
+		return requiereResumenCuenta;
+	}
+
+	public void setRequiereResumenCuenta(boolean requiereResumenCuenta) {
+		this.requiereResumenCuenta = requiereResumenCuenta;
+	}
+
 	@Override
 	public String toString() {
 		return this.getDescripcionEntera();
