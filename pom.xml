@@ -2,12 +2,26 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.uqbar.edu.paiu</groupId>
 	<artifactId>celulares-domain</artifactId>
-	<packaging>jar</packaging>
-	<version>3.0.0</version>
-	<name>celulares-ui-arena</name>
-	<url>http://maven.apache.org</url>
+	<version>3.0.1-SNAPSHOT</version>
+
+	<parent>
+	    <groupId>org.uqbar-project</groupId>
+		<artifactId>uqbar-examples-parent</artifactId>
+    	<version>1.1</version>
+	</parent>
+	
+	<properties>
+		<scm.svnServer>scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java</scm.svnServer>
+		<scm.svnRepository>celulares-domain</scm.svnRepository>
+		<uqbar.repo.url>ftp://ftp.uqbar-wiki.org</uqbar.repo.url>
+	</properties>
+
+	<scm>
+		<connection>scm:svn:scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java/celulares-domain</connection>
+		<developerConnection>scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java/celulares-domain</developerConnection>
+		<url>scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java/celulares-domain</url>
+	</scm>
 
 	<dependencies>
 		<dependency>
