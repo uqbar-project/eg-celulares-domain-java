@@ -1,4 +1,4 @@
-package org.uqbar.edu.paiu.examples.celulares.domain;
+package ar.edu.celulares.domain;
 import java.math.BigDecimal;
 
 import org.uqbar.commons.model.Entity;

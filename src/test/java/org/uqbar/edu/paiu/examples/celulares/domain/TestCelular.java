@@ -4,9 +4,13 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.math.BigDecimal;
+
 import org.uqbar.commons.model.UserException;
 import org.junit.Before;
 import org.junit.Test;
+
+import ar.edu.celulares.domain.Celular;
+import ar.edu.celulares.domain.ModeloCelular;
 
 public class TestCelular {
 	Celular celularNoResumen;

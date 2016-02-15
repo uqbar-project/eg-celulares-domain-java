@@ -1,6 +1,7 @@
 package org.uqbar.edu.paiu.examples.celulares.home;
 
-import org.uqbar.edu.paiu.examples.celulares.domain.Celular;
+import ar.edu.celulares.domain.Celular;
+import ar.edu.celulares.repo.RepositorioCelulares;
 
 public class MockHomeCelulares extends RepositorioCelulares {
 	@Override 

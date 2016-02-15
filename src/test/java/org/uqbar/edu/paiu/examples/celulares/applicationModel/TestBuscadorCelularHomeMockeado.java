@@ -5,8 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.uqbar.commons.utils.ApplicationContext;
-import org.uqbar.edu.paiu.examples.celulares.domain.Celular;
 import org.uqbar.edu.paiu.examples.celulares.home.MockHomeCelulares;
+
+import ar.edu.celulares.applicationModel.BuscadorCelular;
+import ar.edu.celulares.domain.Celular;
 
 public class TestBuscadorCelularHomeMockeado extends
 		AbstractTestBuscadorCelular {

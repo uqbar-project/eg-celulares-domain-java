@@ -2,8 +2,10 @@ package org.uqbar.edu.paiu.examples.celulares.applicationModel;
 
 import org.junit.Before;
 import org.uqbar.commons.utils.ApplicationContext;
-import org.uqbar.edu.paiu.examples.celulares.domain.ModeloCelular;
-import org.uqbar.edu.paiu.examples.celulares.home.RepositorioModelos;
+
+import ar.edu.celulares.applicationModel.BuscadorCelular;
+import ar.edu.celulares.domain.ModeloCelular;
+import ar.edu.celulares.repo.RepositorioModelos;
 
 public class AbstractTestBuscadorCelular {
 	protected BuscadorCelular searcher;

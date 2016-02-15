@@ -1,16 +1,17 @@
-package org.uqbar.edu.paiu.examples.celulares.home;
+package ar.edu.celulares.repo;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 import org.apache.commons.collections15.Predicate;
-import org.uqbar.commons.model.CollectionBasedHome;
+import org.uqbar.commons.model.CollectionBasedRepo;
 import org.uqbar.commons.model.UserException;
 import org.uqbar.commons.utils.Observable;
-import org.uqbar.edu.paiu.examples.celulares.domain.ModeloCelular;
+
+import ar.edu.celulares.domain.ModeloCelular;
 
 @Observable
-public class RepositorioModelos  extends CollectionBasedHome<ModeloCelular>{
+public class RepositorioModelos  extends CollectionBasedRepo<ModeloCelular>{
 	private static RepositorioModelos instance = new RepositorioModelos();
 
 	public static RepositorioModelos repositorioModelos() {
@@ -61,8 +62,7 @@ public class RepositorioModelos  extends CollectionBasedHome<ModeloCelular>{
 	}
 
 	@Override
-	protected Predicate getCriterio(ModeloCelular example) {
-		// TODO Auto-generated method stub
+	protected Predicate<ModeloCelular> getCriterio(ModeloCelular example) {
 		return null;
 	}
 	

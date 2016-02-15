@@ -1,21 +1,22 @@
-package org.uqbar.edu.paiu.examples.celulares.home;
+package ar.edu.celulares.repo;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.collections15.Predicate;
-import org.uqbar.commons.model.CollectionBasedHome;
+import org.uqbar.commons.model.CollectionBasedRepo;
 import org.uqbar.commons.model.UserException;
 import org.uqbar.commons.utils.Observable;
-import org.uqbar.edu.paiu.examples.celulares.domain.Celular;
-import org.uqbar.edu.paiu.examples.celulares.domain.ModeloCelular;
+
+import ar.edu.celulares.domain.Celular;
+import ar.edu.celulares.domain.ModeloCelular;
 
 /**
  * 
  * @author npasserini
  */
 @Observable
-public class RepositorioCelulares extends CollectionBasedHome<Celular>{
+public class RepositorioCelulares extends CollectionBasedRepo<Celular>{
 	private static RepositorioCelulares instance = new RepositorioCelulares();
 
 	public static RepositorioCelulares repositorioCelulares() {
@@ -99,8 +100,7 @@ public class RepositorioCelulares extends CollectionBasedHome<Celular>{
 	}
 
 	@Override
-	protected Predicate getCriterio(Celular example) {
-		// TODO Auto-generated method stub
+	protected Predicate<Celular> getCriterio(Celular example) {
 		return null;
 	}
 }

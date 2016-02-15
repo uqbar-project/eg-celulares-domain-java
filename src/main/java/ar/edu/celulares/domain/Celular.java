@@ -1,8 +1,8 @@
-package org.uqbar.edu.paiu.examples.celulares.domain;
+package ar.edu.celulares.domain;
 
 import org.uqbar.commons.model.Entity;
-import org.uqbar.commons.model.ObservableUtils;
 import org.uqbar.commons.model.UserException;
+import org.uqbar.commons.utils.Dependencies;
 import org.uqbar.commons.utils.Observable;
 import org.uqbar.commons.utils.Transactional;
 
@@ -10,7 +10,7 @@ import org.uqbar.commons.utils.Transactional;
 @Transactional
 @Observable
 public class Celular extends Entity {
-	public final int MAX_NUMERO = 1000;
+	private static final int MAX_NUMERO = 10000000;
 
 	private Integer numero;
 	private String nombre;
@@ -43,8 +43,8 @@ public class Celular extends Entity {
 		if (!this.ingresoNumero()) {
 			throw new UserException("Debe ingresar número");
 		}
-		if (this.numero.intValue() <= this.MAX_NUMERO) {
-			throw new UserException("El número debe ser mayor a " + this.MAX_NUMERO);
+		if (this.numero.intValue() <= MAX_NUMERO) {
+			throw new UserException("El número debe ser mayor a " + MAX_NUMERO);
 		}
 		if (!this.ingresoNombre()) {
 			throw new UserException("Debe ingresar nombre");
@@ -71,8 +71,8 @@ public class Celular extends Entity {
 	}
 
 	public void setNumero(Integer numero) {
-		if (numero < 10000000) {
-			throw new UserException("El número de celular es muy corto");
+		if (numero < MAX_NUMERO) {
+			throw new UserException("El número de celular debe ser mayor a " + MAX_NUMERO);
 		}
 		this.numero = numero;
 	}
@@ -92,7 +92,6 @@ public class Celular extends Entity {
 	public void setModeloCelular(ModeloCelular modeloCelular) {
 		this.modeloCelular = modeloCelular;
 		this.setRecibeResumenCuenta(modeloCelular.getRequiereResumenCuenta());
-		ObservableUtils.firePropertyChanged(this, "habilitaResumenCuenta", this.getHabilitaResumenCuenta());
 	}
 
 	public void setRecibeResumenCuenta(Boolean recibeResumenCuenta) {
@@ -103,6 +102,7 @@ public class Celular extends Entity {
 		return this.recibeResumenCuenta;
 	}
 
+	@Dependencies("modeloCelular")
 	public Boolean getHabilitaResumenCuenta() {
 		return !this.modeloCelular.getRequiereResumenCuenta();
 	}
