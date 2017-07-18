@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>celulares-domain</artifactId>
+	<artifactId>eg-celulares-domain-java</artifactId>
 	<version>3.0.1</version>
 
 	<parent>
@@ -13,7 +13,7 @@
 	
 	<properties>
 		<scm.gitServer>scm:git:https://git2.xp-dev.com/git/uqbar/examples/ui/domain/java</scm.gitServer>
-		<scm.gitRepository>celulares-domain</scm.gitRepository>
+		<scm.gitRepository>eg-celulares-domain-java</scm.gitRepository>
 		<uqbar.repo.url>ftp://ftp.uqbar-wiki.org</uqbar.repo.url>
 	</properties>
 
