@@ -1,10 +1,10 @@
 package ar.edu.celulares.domain;
 
 import org.uqbar.commons.model.Entity;
-import org.uqbar.commons.model.UserException;
-import org.uqbar.commons.utils.Dependencies;
-import org.uqbar.commons.utils.Observable;
-import org.uqbar.commons.utils.Transactional;
+import org.uqbar.commons.model.annotations.Dependencies;
+import org.uqbar.commons.model.annotations.Observable;
+import org.uqbar.commons.model.annotations.Transactional;
+import org.uqbar.commons.model.exceptions.UserException;
 
 @SuppressWarnings("serial")
 @Transactional

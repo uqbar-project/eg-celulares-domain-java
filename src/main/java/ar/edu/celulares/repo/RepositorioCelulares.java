@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.collections15.Predicate;
 import org.uqbar.commons.model.CollectionBasedRepo;
-import org.uqbar.commons.model.UserException;
-import org.uqbar.commons.utils.Observable;
+import org.uqbar.commons.model.annotations.Observable;
+import org.uqbar.commons.model.exceptions.UserException;
 
 import ar.edu.celulares.domain.Celular;
 import ar.edu.celulares.domain.ModeloCelular;

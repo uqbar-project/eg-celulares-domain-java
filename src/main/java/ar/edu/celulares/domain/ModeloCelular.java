@@ -2,7 +2,7 @@ package ar.edu.celulares.domain;
 import java.math.BigDecimal;
 
 import org.uqbar.commons.model.Entity;
-import org.uqbar.commons.utils.TransactionalAndObservable;
+import org.uqbar.commons.model.annotations.TransactionalAndObservable;
 
 
 @SuppressWarnings("serial")

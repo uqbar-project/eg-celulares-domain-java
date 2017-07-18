@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>celulares-domain</artifactId>
-	<version>3.0.1-SNAPSHOT</version>
+	<version>3.0.1</version>
 
 	<parent>
 	    <groupId>org.uqbar-project</groupId>
@@ -12,22 +12,22 @@
 	</parent>
 	
 	<properties>
-		<scm.svnServer>scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java</scm.svnServer>
-		<scm.svnRepository>celulares-domain</scm.svnRepository>
+		<scm.gitServer>scm:git:https://git2.xp-dev.com/git/uqbar/examples/ui/domain/java</scm.gitServer>
+		<scm.gitRepository>celulares-domain</scm.gitRepository>
 		<uqbar.repo.url>ftp://ftp.uqbar-wiki.org</uqbar.repo.url>
 	</properties>
 
 	<scm>
-		<connection>scm:svn:scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java/celulares-domain</connection>
-		<developerConnection>scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java/celulares-domain</developerConnection>
-		<url>scm:svn:https://svn2.xp-dev.com/svn/uqbar/examples/ui/domain/java/celulares-domain</url>
+		<connection>scm:git:scm:git:https://github.com/uqbar-project/eg-celulares-domain-java</connection>
+		<developerConnection>scm:git:https://github.com/uqbar-project/eg-celulares-domain-java</developerConnection>
+		<url>scm:git:https://github.com/uqbar-project/eg-celulares-domain-java</url>
 	</scm>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.uqbar-project</groupId>
 			<artifactId>uqbar-domain</artifactId>
-			<version>3.6.1</version>
+			<version>3.6.3</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>

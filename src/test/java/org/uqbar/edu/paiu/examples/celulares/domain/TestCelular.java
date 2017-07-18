@@ -5,9 +5,9 @@ import static org.junit.Assert.assertTrue;
 
 import java.math.BigDecimal;
 
-import org.uqbar.commons.model.UserException;
 import org.junit.Before;
 import org.junit.Test;
+import org.uqbar.commons.model.exceptions.UserException;
 
 import ar.edu.celulares.domain.Celular;
 import ar.edu.celulares.domain.ModeloCelular;

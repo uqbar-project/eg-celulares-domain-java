@@ -3,8 +3,8 @@ package ar.edu.celulares.applicationModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.uqbar.commons.utils.ApplicationContext;
-import org.uqbar.commons.utils.Observable;
+import org.uqbar.commons.applicationContext.ApplicationContext;
+import org.uqbar.commons.model.annotations.Observable;
 
 import ar.edu.celulares.domain.Celular;
 import ar.edu.celulares.repo.RepositorioCelulares;

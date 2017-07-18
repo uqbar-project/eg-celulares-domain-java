@@ -1,10 +1,10 @@
 package org.uqbar.edu.paiu.examples.celulares.applicationModel;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.uqbar.commons.utils.ApplicationContext;
+import org.uqbar.commons.applicationContext.ApplicationContext;
 
 import ar.edu.celulares.applicationModel.BuscadorCelular;
 import ar.edu.celulares.domain.Celular;
