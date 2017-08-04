@@ -5,12 +5,26 @@
 	<artifactId>eg-celulares-domain-java</artifactId>
 	<version>3.0.1</version>
 
+	<repositories>
+		<repository>
+			<id>uqbar-wiki.org-releases</id>
+			<name>uqbar-wiki.org-releases</name>
+			<url>http://uqbar-wiki.org/mvn/releases</url>
+		</repository>
+		<repository>
+			<snapshots />
+			<id>uqbar-wiki.org-snapshots</id>
+			<name>uqbar-wiki.org-snapshots</name>
+			<url>http://uqbar-wiki.org/mvn/snapshots</url>
+		</repository>
+	</repositories>
+
 	<parent>
-	    <groupId>org.uqbar-project</groupId>
+		<groupId>org.uqbar-project</groupId>
 		<artifactId>uqbar-examples-parent</artifactId>
-    	<version>1.1</version>
+		<version>1.1</version>
 	</parent>
-	
+
 	<properties>
 		<scm.gitServer>scm:git:https://git2.xp-dev.com/git/uqbar/examples/ui/domain/java</scm.gitServer>
 		<scm.gitRepository>eg-celulares-domain-java</scm.gitRepository>
